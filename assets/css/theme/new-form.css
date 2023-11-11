@@ -1,0 +1,40 @@
+/* main-form */
+.main-form {}
+
+/* form-header */
+.main-form .form-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.main-form .form-title {
+  font-size: 20px;
+}
+
+/* form-body */
+.main-form .form-body {
+  position: relative;
+}
+
+/* form-section */
+.main-form .form-section {
+  margin-top: 15px;
+}
+/* fc-title */
+.main-form .fc-title {
+  font-size: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+/* form-content */
+.main-form .form-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.main-form .side-by-side .th-label {
+  min-width: 100px;
+}
+/* ----------------------- */

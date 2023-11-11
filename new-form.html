@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- :: Meta Tags :: -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page description">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="keywords" content="dashboard, dashboard">
+  <meta name="theme-color" content="#0060fe">
+  <meta name="title" content="Home page">
+  <meta name="language" content="ar">
+  <!-- :: Favicon :: -->
+  <link rel="shortcut icon" href="assets/images/theme/favicon.png" type="image/x-icon">
+  <!-- :: CSS Files :: -->
+  <link rel="stylesheet" href="./assets/css/theme/bundle.css">
+  <link rel="stylesheet" href="./assets/css/libs/select2.min.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="./assets/css/theme/style.css">
+  <link rel="stylesheet" href="./assets/css/theme/new-form.css">
+  <title>نظام حصر البن | الزيارات</title>
+  <!-- :: SCRIPT FILES :: -->
+</head>
+
+<body>
+  <!-- :: MAIN :: -->
+  <main class="d-flex align-items-start justify-content-start sidebar-active" id="main">
+    <!-- :: NAVBAR :: -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- right-content -->
+          <div class="right-content d-flex align-items-center">
+            <!-- sidebar-btn -->
+            <button type="button" aria-label="Menu"
+              class="sidebar-btn d-inline-flex align-items-center justify-content-center ml--sm-2" id="sidebar-btn">
+              <i class="fi fi-rr-menu-burger"></i>
+            </button>
+            <!-- page-title -->
+            <div class="page-title">الرئيسية</div>
+          </div>
+          <!-- search-area -->
+          <div class="search-area d-inline-flex align-items-center position-relative">
+            <input type="text" placeholder="بحث">
+            <i class="fi fi-rr-search position-absolute"></i>
+          </div>
+          <!-- user-area -->
+          <div class="user-area position-relative d-flex align-items-center">
+            <!-- options -->
+            <div class="options d-flex align-items-center">
+              <!-- option -->
+              <a href="#" aria-label="Link" class="option">
+                <i class="fi fi-rr-refresh"></i>
+              </a>
+              <!-- option -->
+              <a href="#" aria-label="Link" class="option active">
+                <i class="fi fi-rr-comment-alt-dots"></i>
+              </a>
+              <!-- option -->
+              <a href="#" aria-label="Link" class="option">
+                <i class="fi fi-rr-bell"></i>
+              </a>
+            </div>
+            <!-- user-menu -->
+            <div class="user-menu position-relative" id="user-menu">
+              <!-- user -->
+              <div class="user d-flex align-items-center" id="user-btn">
+                <!-- avatar -->
+                <div class="avatar position-relative">
+                  <img src="./assets/images/avatars/01.png" class="img-fluid" alt="User">
+                  <i
+                    class="fi fi-sr-angle-small-down icon position-absolute d-inline-flex align-items-center justify-content-center"></i>
+                </div>
+              </div>
+              <!-- menu -->
+              <div class="menu">
+                <ul class="list-unstyled">
+                  <li class="menu-item position-relative">
+                    <a href="#">
+                      <i class="fi fi-rr-user"></i>
+                      الحساب الشخصي
+                    </a>
+                  </li>
+                  <li class="menu-item position-relative">
+                    <a href="#">
+                      <i class="fi fi-rr-settings"></i>
+                      الاعدادات
+                    </a>
+                  </li>
+                  <li class="menu-item logout-item position-relative">
+                    <a href="#">
+                      <i class="fi fi-rr-power"></i>
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- :: ASIDE :: -->
+    <aside>
+      <!-- logo -->
+      <div class="logo d-flex align-items-center justify-content-center flex-column">
+        <img src="./assets/images/logos/logo-p1.svg" class="p1 img-fluid" alt="Logo">
+        <img src="./assets/images/logos/logo-p2.svg" class="p2 img-fluid" alt="Logo">
+      </div>
+      <!-- menu -->
+      <div class="menu">
+        <!-- main-menu -->
+        <ul class="main-menu list-unstyled">
+          <!-- m-item -->
+          <li class="m-item active">
+            <a href="./index.html">
+              <i class="fi fi-rr-house-chimney icon"></i>
+              <span class="link-text">الرئيسية</span>
+            </a>
+          </li>
+          <!-- item-title -->
+          <li class="item-title">البيانات و الادارة</li>
+          <!-- m-item -->
+          <li class="m-item has-sub-menu-l1">
+            <a href="#" class="prevent-default">
+              <i class="fi fi-rr-file-edit icon"></i>
+              <span class="link-text">المحافظات والمراكز</span>
+              <i class="fi fi-rr-angle-down arrow mr-auto"></i>
+            </a>
+            <!-- sub-menu-l1 -->
+            <ul class="sub-menu-l1 list-unstyled">
+              <!-- sub-menu-item -->
+              <li class="sub-menu-item">
+                <a href="cities.html" class="sub-menu-item-link">دليل المحافظات
+                </a>
+              </li>
+              <!-- sub-menu-item -->
+              <li class="sub-menu-item">
+                <a href="towns.html" class="sub-menu-item-link">دليل المراكز
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- m-item -->
+          <li class="m-item has-sub-menu-l1">
+            <a href="#" class="prevent-default">
+              <i class="fi fi-rr-file-edit icon"></i>
+              <span class="link-text">الزيارات</span>
+              <i class="fi fi-rr-angle-down arrow mr-auto"></i>
+            </a>
+            <!-- sub-menu-l1 -->
+            <ul class="sub-menu-l1 list-unstyled">
+              <!-- sub-menu-item -->
+              <li class="sub-menu-item">
+                <a href="#" class="sub-menu-item-link">اضافة زيارة
+                </a>
+              </li>
+              <!-- sub-menu-item -->
+              <li class="sub-menu-item">
+                <a href="#" class="sub-menu-item-link">جميع الزيارات
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- m-item -->
+          <li class="m-item">
+            <a href="#" class="prevent-default">
+              <i class="fi fi-rr-star icon"></i>
+              <span class="link-text">البيانات</span>
+              <i class="fi fi-rr-angle-down arrow mr-auto"></i>
+            </a>
+            <!-- sub-menu-l1 -->
+            <ul class="sub-menu-l1 list-unstyled">
+              <!-- sub-menu-item -->
+              <li class="sub-menu-item has-sml2">
+                <a href="#" class="sub-menu-item-link">بنود التقييم
+                  <i class="fi fi-rr-angle-left arrow mr-auto"></i>
+                </a>
+                <!-- sub-menu-l2 -->
+                <ul class="sub-menu-l2">
+                  <li class="sml2-item"><a href="#">بنود التقييم</a></li>
+                  <li class="sml2-item"><a href="#">اضافة بند</a></li>
+                </ul>
+              </li>
+              <!-- sub-menu-item -->
+              <li class="sub-menu-item has-sml2">
+                <a href="#" class="sub-menu-item-link">نماذج التقييم
+                  <i class="fi fi-rr-angle-left arrow mr-auto"></i>
+                </a>
+                <!-- sub-menu-l2 -->
+                <ul class="sub-menu-l2">
+                  <li class="sml2-item"><a href="#">نماذج التقييم</a></li>
+                  <li class="sml2-item"><a href="#">اضافة نموذج</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- :: MAIN-CONTENT :: -->
+    <div class="main-content pt-small">
+      <div class="container-fluid">
+        <!-- breadcrumb -->
+        <ul class="breadcrumb list-unstyled">
+          <li><a href="#">الرئيسية</a></li>
+          <li><i class="fi fi-rr-angle-small-left"></i></li>
+          <li><a href="#">الزيارات</a></li>
+          <li><i class="fi fi-rr-angle-small-left"></i></li>
+          <li class="active">اضافة زيارة</li>
+        </ul>
+        <!-- main-form -->
+        <form action="#" class="main-form py-2">
+          <!-- form-header -->
+          <div class="form-header">
+            <!-- row -->
+            <div class="row align-items-center">
+              <!-- col -->
+              <div class="col-6">
+                <h2 class="form-title">اضافة زيارة جديدة</h2>
+              </div>
+              <!-- col -->
+              <div class="col-6 text-left">
+                <!-- formActions -->
+                <div class="formActions">
+                  <button type="submit" class="theme-btn --fill-primary ml--sm-1">أضافة زيارة</button>
+                  <button type="reset" class="theme-btn --outline-danger">الغاء</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- form-body -->
+          <div class="form-body">
+            <!-- row -->
+            <div class="row small-gutters">
+              <!-- col -->
+              <div class="col-6">
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">بيانات الاستمارة</h3>
+                    <!-- row -->
+                    <div class="row">
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">رقم الاستمارة</span>
+                          <input type="text" class="th-input w-100" placeholder="9991790">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">تاريخ الحصر</span>
+                          <input type="date" class="th-input w-100" lang="ar-CA"">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">معلومات عامة</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label 2-100">المحافظة</span>
+                          <select name="" class="th-select w-100" id="citiesSelect">
+                            <option value="" disabled selected></option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label 2-100">المركز</span>
+                          <select name="" class="th-select w-100" id="townSelect">
+                            <option value="" disabled selected>اختر مركز</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">اسم القبيلة</span>
+                          <select name="" class="th-select w-100" id="tribeSelect">
+                            <option value="" selected></option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">بيانات المزارع</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">اسم المزارع</span>
+                          <input type="text" class="th-input w-100" placeholder="اسم المزارع">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">الهوية الوطنية</span>
+                          <input type="number" class="th-input hide-arrows w-100" placeholder="رقم الهوية">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">رقم الجوال</span>
+                          <input type="number" class="th-input hide-arrows w-100" placeholder="000 000 000 20">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">معلومات الانــتــاج</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">حــصــر الـبـن</span>
+                          <div class="d-flex align-items-center gap-x-10 w-100">
+                            <input type="number" class="th-input w-100" placeholder="منتج">
+                            <input type="number" class="th-input w-100" placeholder="غير منتج">
+                            <input type="number" class="th-input w-100" placeholder="الاجمالي">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">معلومات المدرجات</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">المدرجات</span>
+                          <div class="d-flex align-items-center gap-x-10 w-100">
+                            <input type="number" class="th-input w-100" placeholder="المزروعة">
+                            <input type="number" class="th-input w-100" placeholder="غير المزروعة">
+                            <input type="number" class="th-input w-100" placeholder="الاجمالي">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">ملاحظات</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group align-items-start w-100">
+                          <span class="th-label">ملاحظات</span>
+                          <div class="d-flex w-100">
+                            <textarea name="" class="th-textarea w-100" rows="3"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-6">
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">موقع المزرعة</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">الاحداثيات</span>
+                          <div class="d-flex align-items-center gap-x-10 w-100">
+                            <input type="text" class="th-input w-100 text-left" placeholder="E">
+                            <input type="text" class="th-input w-100 text-left" placeholder="N">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">موقع المزرعة</span>
+                          <input type="text" class="th-input w-100" placeholder="العنوان">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">طريق المزرعة</span>
+                          <select name="" class="th-select w-100" id="farmRoadSelect"></select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12 hidden-col" id="farm-road-hidden-col">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100 h-100">
+                          <span class="th-label">نوع الطريق</span>
+                          <!-- checkbox-box -->
+                          <div class="checkbox-box d-flex align-items-center justify-content-between">
+                            <!-- th-custom-checkbox -->
+                            <label class="th-custom-checkbox ml-2">
+                              <input type="radio" name="roadType" id="1">
+                              طريق مسفلت
+                              <div class="checkbox-indecator"></div>
+                            </label>
+                            <!-- th-custom-checkbox -->
+                            <label class="th-custom-checkbox ml-2">
+                              <input type="radio" name="roadType" id="2">
+                              طريق ترابي
+                              <div class="checkbox-indecator"></div>
+                            </label>
+                            <!-- th-custom-checkbox -->
+                            <label class="th-custom-checkbox">
+                              <input type="radio" name="roadType" id="3">
+                              طريق رجل
+                              <div class="checkbox-indecator"></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">مصادر المياة والري</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100 h-100">
+                          <span class="th-label">مصادر المياة</span>
+                          <select name="" class="th-select w-100" id="waterSourceSelect" multiple="multiple">
+                          </select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12 hidden-col" id="water-source-hidden-col">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100 align-items-start">
+                          <span class="th-label">اخري</span>
+                          <textarea type="text" class="th-textarea w-100" placeholder=""></textarea>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">شبكة الري</span>
+                          <select name="" class="th-select w-100" id="irrigationSelect"></select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12 hidden-col" id="irrigation-hidden-col">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label"></span>
+                          <input type="text" class="th-input w-100" placeholder="ملاحظات حول شبكة الري">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">خزان مياه</span>
+                          <select name="" class="th-select w-100" id="watertankSelect"></select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12 hidden-col" id="watertank-hidden-col">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">نوع الخزان</span>
+                          <select name="" class="th-select w-100" id="tankTypeSelect"></select>
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-12 hidden-col" id="watertank-specs-hidden-col">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label"></span>
+                          <div class="d-flex align-items-center gap-x-10 w-100">
+                            <input type="number" class="th-input w-100" placeholder="العدد">
+                            <input type="number" class="th-input w-100" placeholder="السعة اللترية">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">الاشجار الاخري</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">الصندل</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">مانجو</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">قشطة</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">جوافة</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">عنبرود</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">تين</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">رمان</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">موز</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">ليمون</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">برتقال</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">عطريات</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                      <!-- col -->
+                      <div class="col-6">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">اخري</span>
+                          <input type="number" class="th-input w-100" placeholder="العدد">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-section -->
+                <div class="form-section">
+                  <!-- form-content -->
+                  <div class="form-content side-by-side pb-3">
+                    <!-- fc-title -->
+                    <h3 class="fc-title">مرافق مندوب الهيئة</h3>
+                    <!-- row -->
+                    <div class="row gap-y-15">
+                      <!-- col -->
+                      <div class="col-12">
+                        <!-- th-input-group -->
+                        <div class="th-input-group w-100">
+                          <span class="th-label">الاسم</span>
+                          <div class="d-flex w-100">
+                            <input name="" class="th-input w-100" placeholder="الاسم الثلاثي">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="./assets/js/libs/jquery-3.7.0.min.js"></script>
+  <script src="./assets/js/libs/select2.min.js"></script>
+  <script src="./assets/js/theme/script.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.th-select').select2();
+
+      // irrigationSelect
+      var irrigationList =
+      [
+        {id: 1, text: 'لا يوجد'},
+        {id: 2, text: 'يوجد شبكة ري'}
+      ];
+      $('#irrigationSelect').select2({
+        placeholder: 'لا يوجد شبكة ري',
+        minimumResultsForSearch: -1,
+        data: irrigationList,
+      });
+      $('#irrigationSelect').on('select2:select', function (e) {
+        var data = e.params.data.id;
+        if (data == 2) {
+          $('#irrigation-hidden-col').fadeIn();
+        } else {
+          $('#irrigation-hidden-col').fadeOut();
+        }
+      });
+
+      // farmRoadSelect
+      var farmRoadSelectList =
+      [
+        {id: 1, text: 'لا يوجد'},
+        {id: 2, text: 'يوجد طريق'}
+      ];
+      $('#farmRoadSelect').select2({
+        placeholder: 'اختر طريق',
+        minimumResultsForSearch: -1,
+        data: farmRoadSelectList
+      });
+      $('#farmRoadSelect').on('select2:select', function (e) {
+        var data = e.params.data.id;
+        if (data == 2) {
+          $('#farm-road-hidden-col').fadeIn();
+        } else {
+          $('#farm-road-hidden-col').fadeOut();
+        }
+      });
+
+      // waterSourceSelect
+      var waterSourceList =
+      [
+        {id: 1, text: 'مياة الامطار'},
+        {id: 2, text: 'مياة الابار'},
+        {id: 3, text: 'مياة جوفية'},
+        {id: 4, text: 'مياة سقيا'},
+        {id: 5, text: 'اخري'}
+      ];
+      $('#waterSourceSelect').select2({
+        placeholder: 'قم بتحديد مصادر المياة',
+        data: waterSourceList,
+        minimumResultsForSearch: -1
+      });
+      $('#waterSourceSelect').on('select2:select', function (e) {
+        var data = e.params.data.id;
+        if (data == 5) {
+          $('#water-source-hidden-col').fadeIn();
+        } else {
+          $('#water-source-hidden-col').fadeOut();
+        }
+      });
+
+      // watertank-hidden-col
+      // watertankSelect
+      var watertankSelectList =
+      [
+        {id: 1, text: 'لا يوجد'},
+        {id: 2, text: 'يوجد خزان'}
+      ];
+      $('#watertankSelect').select2({
+        placeholder: 'لا يوجد',
+        minimumResultsForSearch: -1,
+        data: watertankSelectList
+      });
+      $('#watertankSelect').on('select2:select', function (e) {
+        var data = e.params.data.id;
+        if (data == 2) {
+          $('#watertank-hidden-col').fadeIn();
+        } else {
+          $('#watertank-hidden-col').fadeOut();
+        }
+      });
+
+      // tankTypeSelect
+      var tankTypeSelectList =
+      [
+        {id: 1, text: 'خزان تعبية خرساني'},
+        {id: 2, text: 'خزان فايبر'},
+        {id: 3, text: 'بركة'}
+      ];
+      $('#tankTypeSelect').select2({
+        placeholder: 'لا يوجد',
+        minimumResultsForSearch: -1,
+        data: tankTypeSelectList
+      }).val(3).trigger('change');
+      $('#tankTypeSelect').on('select2:select', function (e) {
+        var data = e.params.data.id;
+        if (data == 1 || data == 2) {
+          $('#watertank-specs-hidden-col').fadeIn();
+        } else {
+          $('#watertank-specs-hidden-col').fadeOut();
+        }
+      });
+
+      // citiesSelect
+      var citiesSelectList = [
+        {id: 0, text: 'الغربية'},
+        {id: 1, text: 'الجيزة'},
+        {id: 2, text: 'الإسماعيلية'},
+        {id: 3, text: 'كفر الشيخ'},
+        {id: 4, text: 'المنوفية'},
+        {id: 5, text: 'الوادي الجديد'}
+      ];
+      $('#citiesSelect').select2({
+        placeholder: 'اختر محافظة',
+        data: citiesSelectList
+      });
+
+      // townSelect
+      var townSelectList = [
+        {id: 0, text: 'الغربية'},
+        {id: 1, text: 'الجيزة'},
+        {id: 2, text: 'الإسماعيلية'},
+        {id: 3, text: 'كفر الشيخ'},
+        {id: 4, text: 'المنوفية'},
+        {id: 5, text: 'الوادي الجديد'}
+      ];
+      $('#townSelect').select2({
+        placeholder: 'اختر مركز',
+        data: townSelectList
+      });
+
+      // tribeSelect
+      var tribeSelectList = [
+        {id: 0, text: 'قبيلة رقم 1'},
+        {id: 1, text: 'قبيلة رقم 2'},
+        {id: 2, text: 'قبيلة رقم 3'},
+        {id: 3, text: 'قبيلة رقم 4'},
+        {id: 4, text: 'قبيلة رقم 5'},
+        {id: 5, text: 'قبيلة رقم 6'}
+      ];
+      $('#tribeSelect').select2({
+        placeholder: 'اختر قبيلة',
+        data: tribeSelectList
+      });
+
+    });
+  </script>
+</body>
+
+</html>
